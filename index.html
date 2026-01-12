@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sreeharini S | Portfolio</title>
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  background:#f8fafc;
+  color:#0f172a;
+  min-height:100vh;
+}
+
+/* ===== Layout ===== */
+.wrapper{
+  display:flex;
+}
+
+/* ===== Sidebar ===== */
+.sidebar{
+  width:280px;
+  background:linear-gradient(180deg,#0f172a,#020617);
+  color:#fff;
+  padding:40px 20px;
+  position:fixed;
+  height:100vh;
+}
+
+.avatar{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background:#2563eb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:42px;
+  margin:0 auto;
+}
+
+.sidebar h2{
+  text-align:center;
+  margin-top:15px;
+}
+
+.sidebar p{
+  text-align:center;
+  color:#cbd5f5;
+  font-size:14px;
+  margin:8px 0 25px;
+}
+
+/* ===== Contact Component ===== */
+.contact{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-bottom:25px;
+}
+
+.contact-pill{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  color:#e5e7eb;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.contact-pill i{
+  font-size:16px;
+}
+
+/* Social buttons */
+.socials{
+  display:flex;
+  gap:14px;
+  margin-top:10px;
+}
+
+.social-btn{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 0;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  color:#fff;
+}
+
+.social-btn.linkedin{
+  background:#2563eb;
+}
+
+.social-btn.github{
+  background:#1f2937;
+}
+
+/* ===== Main ===== */
+.main{
+  margin-left:300px;
+  padding:50px;
+  width:100%;
+}
+
+section{
+  margin-bottom:50px;
+}
+
+h3{
+  color:#2563eb;
+  font-size:1.5rem;
+  margin-bottom:18px;
+}
+
+/* Cards */
+.card{
+  background:#fff;
+  padding:24px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  margin-bottom:24px;
+}
+
+/* Tags */
+.tags span{
+  display:inline-block;
+  background:#0f172a;
+  color:#fff;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  margin:6px 6px 0 0;
+}
+
+/* Skills */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.skill-box ul{
+  list-style:none;
+}
+
+.skill-box li{
+  margin-bottom:6px;
+  color:#334155;
+}
+
+/* ===== Footer ===== */
+.bottom-footer{
+  margin-left:300px;
+  text-align:center;
+  padding:40px 20px;
+  background:#f1f5f9;
+  color:#475569;
+}
+
+.bottom-footer h4{
+  color:#0f172a;
+  font-size:1.2rem;
+  margin-bottom:6px;
+}
+
+/* ===== Mobile ===== */
+@media(max-width:768px){
+  .wrapper{flex-direction:column;}
+  .sidebar{position:relative;width:100%;height:auto;}
+  .main{margin-left:0;padding:30px;}
+  .bottom-footer{margin-left:0;}
+}
+</style>
+</head>
+
+<body>
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Sreeharini S</h2>
+  <p>IT Student | Frontend & AI Enthusiast</p>
+
+  <div class="contact">
+    <a href="mailto:sreeharinisrinivasan2@gmail.com" class="contact-pill">
+      <i class="fa-solid fa-envelope"></i>
+      sreeharinisrinivasan2@gmail.com
+    </a>
+
+    <a href="tel:6369210377" class="contact-pill">
+      <i class="fa-solid fa-phone"></i>
+      6369210377
+    </a>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/sreeharini-s-497043297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn linkedin">
+        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+      </a>
+
+      <a href="https://github.com/sreehari1019" target="_blank" class="social-btn github">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+<section>
+<h3>Experience</h3>
+<div class="card">
+<strong>Ethical Hacking Intern</strong><br>
+Hackup Technology Pvt. Ltd (Jun–Jul 2024)<br></br>
+<p>
+Completed a 4-week Ethical Hacking internship with hands-on experience in vulnerability
+assessment and penetration testing using tools such as Nmap, Burp Suite, Wappalyzer,
+Dirb, and Nuclei. Identified SQL Injection and XSS vulnerabilities and practiced mitigation
+techniques in Kali Linux.
+</p>
+</div>
+</section>
+
+<section>
+<h3>Projects</h3>
+
+<div class="card">
+<strong>Secure data sharing and Condition dissemination with Multi-Owner in Cloud computing</strong><br></br>
+<p>Engineered a cloud-based secure data-sharing system with multi-owner access, AES/RSA encryption, and policy-based conditional dissemination, enabling dynamic user revocation, audit logging, and privacy-preserving collaboration. Tech: Flask, Python, MySQL, HTML, CSS, JavaScript, Bootstrap</p><br></br>
+<div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>ASP.NET</span><span>MySQL</span></div>
+</div>
+
+<div class="card">
+<strong>Detection of Alzheimer’s disease from MRI scan image using artificial intelligence</strong><br></br>
+<p>An AI-based model that examines MRI brain scans to identify Alzheimer’s indicators and automatically classifies the condition into four stages for early and precise diagnosis.</p><br></br>
+<div class="tags"><span>Python</span><span>ML</span><span>CNN</span></div>
+</div>
+
+<div class="card">
+<strong>Pharmacy Medi-Track App</strong><br></br>
+<p>Developed an Android application for booking appointments, consulting local doctors, and buying medicines online. Designed the user interface in Android Studio using SQLite and currently migrating to Firebase for enhanced database functionality.</p><br></br>
+<div class="tags"><span>Android</span><span>SQLite</span><span>Firebase</span><span>Java</span></div>
+</div>
+
+<div class="card">
+<strong>Damaged Document Restoration: prediction and reconstruction of text using NLP techniques</strong><br></br>
+<p>Currently developing an end-to-end system to enhance, extract, and reconstruct degraded
+Tamil/Indic documents using Python, OpenCV, CNN, OCR, and Indic BERT/LSTM, generating
+accurate searchable PDFs</p><br></br>
+<div class="tags"><span>Python</span><span>OpenCV</span><span>CNN</span><span>OCR</span></div>
+</div>
+</section>
+
+<!-- ===== Skills Section (ADDED) ===== -->
+<section>
+<h3>Skills</h3>
+
+<div class="skills-grid">
+  <div class="card skill-box">
+    <h4>Full Stack</h4>
+    <ul><li>Frontend Development</li></ul>
+  </div>
+
+  <div class="card skill-box">
+    <h4>Programming</h4>
+    <ul><li>Python</li><li>C</li></ul>
+  </div>
+
+  <div class="card skill-box">
+    <h4>Database</h4>
+    <ul><li>MySQL</li><li>MongoDB</li></ul>
+  </div>
+
+  <div class="card skill-box">
+    <h4>Tools</h4>
+    <ul><li>Git</li><li>GitHub</li><li>Power BI</li><li>VS code</li></ul>
+  </div>
+</div>
+
+<div class="card skill-box">
+  <h4>Languages</h4>
+  <ul><li>Tamil</li><li>English</li><li>Kannada</li></ul>
+</div>
+</section>
+
+</div>
+</div>
+
+<footer class="bottom-footer">
+<h4>Coimbatore, Tamil Nadu</h4>
+<p>Let’s create something impactful</p>
+</footer>
+
+</body>
+</html>
