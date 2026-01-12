@@ -35,6 +35,7 @@ body{
   padding:40px 20px;
   position:fixed;
   height:100vh;
+  overflow-y:auto;
 }
 
 .avatar{
@@ -61,7 +62,7 @@ body{
   margin:8px 0 25px;
 }
 
-/* ===== Contact Component ===== */
+/* ===== Contact ===== */
 .contact{
   display:flex;
   flex-direction:column;
@@ -80,13 +81,14 @@ body{
   color:#e5e7eb;
   text-decoration:none;
   font-size:14px;
+  word-break:break-word;
 }
 
 .contact-pill i{
   font-size:16px;
 }
 
-/* Social buttons */
+/* Social */
 .socials{
   display:flex;
   gap:14px;
@@ -106,13 +108,8 @@ body{
   color:#fff;
 }
 
-.social-btn.linkedin{
-  background:#2563eb;
-}
-
-.social-btn.github{
-  background:#1f2937;
-}
+.social-btn.linkedin{ background:#2563eb; }
+.social-btn.github{ background:#1f2937; }
 
 /* ===== Main ===== */
 .main{
@@ -184,15 +181,36 @@ h3{
 
 /* ===== Mobile ===== */
 @media(max-width:768px){
-  .wrapper{flex-direction:column;}
-  .sidebar{position:relative;width:100%;height:auto;}
-  .main{margin-left:0;padding:30px;}
-  .bottom-footer{margin-left:0;}
+  .wrapper{
+    flex-direction:column;
+  }
+
+  .sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+  }
+
+  .main{
+    margin-left:0;
+    padding:25px;
+  }
+
+  .bottom-footer{
+    margin-left:0;
+  }
+
+  .socials{
+    flex-direction:column;
+  }
 }
 </style>
 </head>
 
 <body>
+
+<div class="wrapper">
+
 <!-- Sidebar -->
 <div class="sidebar">
   <h2>Sreeharini S</h2>
@@ -210,7 +228,7 @@ h3{
     </a>
 
     <div class="socials">
-      <a href="https://www.linkedin.com/in/sreeharini-s-497043297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn linkedin">
+      <a href="https://www.linkedin.com/in/sreeharini-s-497043297" target="_blank" class="social-btn linkedin">
         <i class="fa-brands fa-linkedin-in"></i> LinkedIn
       </a>
 
@@ -227,8 +245,8 @@ h3{
 <section>
 <h3>Experience</h3>
 <div class="card">
-<strong>Ethical Hacking Intern</strong><br>
-Hackup Technology Pvt. Ltd (Jun–Jul 2024)<br></br>
+<strong>Ethical Hacking Intern</strong><br><br>
+Hackup Technology Pvt. Ltd (Jun–Jul 2024)<br><br>
 <p>
 Completed a 4-week Ethical Hacking internship with hands-on experience in vulnerability
 assessment and penetration testing using tools such as Nmap, Burp Suite, Wappalyzer,
@@ -242,33 +260,32 @@ techniques in Kali Linux.
 <h3>Projects</h3>
 
 <div class="card">
-<strong>Secure data sharing and Condition dissemination with Multi-Owner in Cloud computing</strong><br></br>
-<p>Engineered a cloud-based secure data-sharing system with multi-owner access, AES/RSA encryption, and policy-based conditional dissemination, enabling dynamic user revocation, audit logging, and privacy-preserving collaboration. Tech: Flask, Python, MySQL, HTML, CSS, JavaScript, Bootstrap</p><br></br>
+<strong>Secure data sharing and Condition dissemination with Multi-Owner in Cloud computing</strong><br><br>
+<p>Engineered a cloud-based secure data-sharing system with multi-owner access, AES/RSA encryption, and policy-based conditional dissemination, enabling dynamic user revocation, audit logging, and privacy-preserving collaboration. Tech: Flask, Python, MySQL, HTML, CSS, JavaScript, Bootstrap</p><br>
 <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span><span>ASP.NET</span><span>MySQL</span></div>
 </div>
 
 <div class="card">
-<strong>Detection of Alzheimer’s disease from MRI scan image using artificial intelligence</strong><br></br>
-<p>An AI-based model that examines MRI brain scans to identify Alzheimer’s indicators and automatically classifies the condition into four stages for early and precise diagnosis.</p><br></br>
+<strong>Detection of Alzheimer’s disease from MRI scan image using artificial intelligence</strong><br><br>
+<p>An AI-based model that examines MRI brain scans to identify Alzheimer’s indicators and automatically classifies the condition into four stages for early and precise diagnosis.</p><br>
 <div class="tags"><span>Python</span><span>ML</span><span>CNN</span></div>
 </div>
 
 <div class="card">
-<strong>Pharmacy Medi-Track App</strong><br></br>
-<p>Developed an Android application for booking appointments, consulting local doctors, and buying medicines online. Designed the user interface in Android Studio using SQLite and currently migrating to Firebase for enhanced database functionality.</p><br></br>
+<strong>Pharmacy Medi-Track App</strong><br><br>
+<p>Developed an Android application for booking appointments, consulting local doctors, and buying medicines online. Designed the user interface in Android Studio using SQLite and currently migrating to Firebase for enhanced database functionality.</p><br>
 <div class="tags"><span>Android</span><span>SQLite</span><span>Firebase</span><span>Java</span></div>
 </div>
 
 <div class="card">
-<strong>Damaged Document Restoration: prediction and reconstruction of text using NLP techniques</strong><br></br>
+<strong>Damaged Document Restoration: prediction and reconstruction of text using NLP techniques</strong><br><br>
 <p>Currently developing an end-to-end system to enhance, extract, and reconstruct degraded
 Tamil/Indic documents using Python, OpenCV, CNN, OCR, and Indic BERT/LSTM, generating
-accurate searchable PDFs</p><br></br>
+accurate searchable PDFs</p><br>
 <div class="tags"><span>Python</span><span>OpenCV</span><span>CNN</span><span>OCR</span></div>
 </div>
 </section>
 
-<!-- ===== Skills Section (ADDED) ===== -->
 <section>
 <h3>Skills</h3>
 
@@ -290,7 +307,7 @@ accurate searchable PDFs</p><br></br>
 
   <div class="card skill-box">
     <h4>Tools</h4>
-    <ul><li>Git</li><li>GitHub</li><li>Power BI</li><li>VS code</li></ul>
+    <ul><li>Git</li><li>GitHub</li><li>Power BI</li><li>VS Code</li></ul>
   </div>
 </div>
 
